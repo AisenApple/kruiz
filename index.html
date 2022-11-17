@@ -3,14 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Quiz-box</title>
+    <title>Beats</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="main.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&family=Play:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <!--Главная-->
 
@@ -21,7 +20,9 @@
             <section class="hero">
                 <div class="container hero__container">
                     <header class="header">
-                        <img src="./img/logo.png" alt="Beats logo" class="logo">
+                        <div class="logo">
+                            <img src="./img/logo.png" alt="Beats logo" class="logo__pic">
+                        </div>
                         <nav class="menu">
                             <ul class="menu__list">
                                 <li class="menu__item">
@@ -63,7 +64,7 @@
                         <ul class="features">
                             <li class="features__item feature">
                                 <div class="feature__icon">
-                                    <img src="./img/noise.png">
+                                    <img src="./img/noise.png" class="feature__icon-icon">
                                 </div>
                                 <div class="features__text">
                                     Безупречный звук
@@ -71,7 +72,7 @@
                             </li>
                             <li class="features__item feature">
                                 <div class="feature__icon">
-                                    <img src="./img/bettery.png">
+                                    <img src="./img/charging.png" class="feature__icon-icon">
                                 </div>
                                 <div class="features__text">
                                     До 40 часов работы
@@ -79,7 +80,7 @@
                             </li>
                             <li class="features__item feature">
                                 <div class="feature__icon">
-                                    <img src="./img/Group.png">
+                                    <img src="./img/Group.png" class="feature__icon-icon">
                                 </div>
                                 <div class="features__text">
                                     Технология Fast Fuel
@@ -89,15 +90,15 @@
                     </div>
                 </div>
             </section>
-            <section class="section">
+            <section class="section benefits">
                 <div class="container">
                     <div class="headline">
-                        <h2 class="section__title headline__title">Почему Beats Solo 3?</h2>
+                        <h2 class="section__title headline__title benefits__main">Почему Beats Solo 3?</h2>
                         <div class="headline__subtitle">Процессор W1 работает невероятно эффективно и позволяет легко
                             подключать наушники к различным устройствам Apple.
                         </div>
                     </div>
-                    <ul class="benefits">
+                    <ul class="benefits__list">
                         <li class="benefits__item benefit">
                             <div class="benefit__image">
                                 <div class="benefit__image-wrapper">
@@ -191,39 +192,41 @@
                 <div class="container">
                     <h2 class="section__title">Закажите доставку</h2>
                     <form class="form">
-                        <div class="form__row">
-                            <label for="" class="form__block">
-                                <div class="form__title">Имя</div>
-                                <input type="text" class="form__input">
-                            </label>
-                            <label for="" class="form__block">
-                                <div class="form__title">Телефон</div>
-                                <input type="text" class="form__input">
-                            </label>
-                        </div>
-                        <div class="form__row">
-                            <label for="" class="form__block">
-                                <div class="form__title">Улица</div>
-                                <input type="text" class="form__input">
-                            </label>
-                        </div>
-                        <div class="form__row">
-                            <label for="" class="form__block">
-                                <div class="form__title">Дом</div>
-                                <input type="text" class="form__input">
-                            </label>
-                            <label for="" class="form__block">
-                                <div class="form__title">Корпус</div>
-                                <input type="text" class="form__input">
-                            </label>
-                            <label for="" class="form__block">
-                                <div class="form__title">Квартира</div>
-                                <input type="text" class="form__input">
-                            </label>
-                            <label for="" class="form__block">
-                                <div class="form__title">Этаж</div>
-                                <input type="text" class="form__input">
-                            </label>
+                        <div class="form__col">
+                            <div class="form__row">
+                                <label for="" class="form__block">
+                                    <div class="form__title">Имя</div>
+                                    <input type="text" class="form__input">
+                                </label>
+                                <label for="" class="form__block">
+                                    <div class="form__title">Телефон</div>
+                                    <input type="text" class="form__input">
+                                </label>
+                            </div>
+                            <div class="form__row">
+                                <label for="" class="form__block">
+                                    <div class="form__title">Улица</div>
+                                    <input type="text" class="form__input">
+                                </label>
+                            </div>
+                            <div class="form__row">
+                                <label for="" class="form__block">
+                                    <div class="form__title">Дом</div>
+                                    <input type="text" class="form__input">
+                                </label>
+                                <label for="" class="form__block">
+                                    <div class="form__title">Корпус</div>
+                                    <input type="text" class="form__input">
+                                </label>
+                                <label for="" class="form__block">
+                                    <div class="form__title">Квартира</div>
+                                    <input type="text" class="form__input">
+                                </label>
+                                <label for="" class="form__block">
+                                    <div class="form__title">Этаж</div>
+                                    <input type="text" class="form__input">
+                                </label>
+                            </div>
                         </div>
                         <div class="form__col">
                             <div class="form__row">
@@ -231,7 +234,8 @@
                                     <div class="form__title">Комментарий</div>
                                     <textarea class="form__input form__input-textarea"></textarea>
                                 </label>
-                                <div class="form__controls">
+                                </div>
+                                <div class="form__row form__controls">
                                     <label class="radio">
                                         <input type="radio" name="option" class="radio__elem">
                                         <div class="radio__visible"></div>
@@ -243,14 +247,14 @@
                                         <div class="radio__title">Потребуется сдача</div>
                                     </label>
                                 </div>
-                                <div class="form__controls">
+                                <div class="form__row form__controls">
                                     <label class="radio radio--checkbox">
                                         <input type="checkbox" name="option" class="radio__elem">
                                         <div class="radio__visible"></div>
                                         <div class="radio__title">Потребуется сдача</div>
                                     </label>
                                 </div>
-                                <div class="form__btns">
+                                <div class="form__row form__btns">
                                     <input type="submit" value="Заказать" class="btn btn--theme--red">
                                     <input type="reset" value="Отчистить" class="btn--theme--transparent">
                                 </div>
@@ -293,4 +297,5 @@
         </ul>
     </nav>
 </body>
+
 </html>
