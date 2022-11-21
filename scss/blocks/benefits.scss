@@ -13,24 +13,28 @@
     flex: 1;
     padding: 0 3%;
     text-align: center;
+    position: relative;
 }
 
 .benefits__item::before {
-    content: url(./img/shape.png);
+    content: url(../img/shape.png);
     position: absolute;
-    top: 30px;
+    top: 60px;
     right: 0;
     transform: translateX(50%);
+    display: block;
+    width: 70px;
+    height: 24px;
 }
 
 .benefits__item:first-child {
     padding-left: 0;
 }
 
-.benefits__item:first-child {
+.benefits__item:last-child {
     padding-right: 0;
 }
 
-.benefits__item:first-child::before {
+.benefits__item:last-child::before {
     display: none;
 }

@@ -1,9 +1,22 @@
 .order-section {
-    background: url(/img/form__img.png); 
+    background: url(/img/form__img.png);
+    color: #fff
+}
+
+.order-section__title {
+    color: inherit;
+    margin-bottom: 58px;
 }
 
 .form {
     display: flex;
+}
+
+.form__title {
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 6px;
+    color: white;
 }
 
 .form__col {
@@ -18,16 +31,48 @@
 .form__row {
     display: flex;
     column-gap: 17px;
+    
+
+    &--textarea {
+        margin-bottom: 18px;
+    }
+}
+
+.form__controls {
+    margin-bottom: 20px;
 }
 
 .form__block {
     flex: 1;
 }
 
+.form__col-ml {
+    margin-left: 27px;
+}
+
 .form__input {
     width: 100%;
-
     border: 3px solid transparent;
     border-radius: 4px;
     padding: 18px 12px;
+    margin-bottom: 11px;
+
+    &--textarea {
+        display: block;
+        height: 152px;
+        resize: none;
+    }
+}
+
+.form__btns {
+    margin-top: 46px;
+}
+
+.form__input-textarea {
+    width: 100%;
+    border: 3px solid transparent;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding: 58px;
+    
 }

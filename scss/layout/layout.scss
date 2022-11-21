@@ -13,6 +13,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     position: relative;
     color: #666666;
+    margin: 0;
 }
 
 .wrapper {
@@ -24,7 +25,7 @@ body {
 }
 
 .container {
-    width: containerWidth;
+    width: $containerWidth;
     margin: 0 auto;
 }
 
