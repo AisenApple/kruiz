@@ -5,11 +5,19 @@
 .headline__title {
     color: #292929;
     margin-bottom: 18px;
+
+    @include tablets {
+        margin-bottom: 11px;
+    }
 }
 
 .headline__subtitle {
-    padding: 0 34%;
+    padding: 0 20%;
     margin-bottom: 62px;
     font-size: 16px;
     line-height: 19px;
+
+    @include tablets {
+        padding: 0 8%;
+    }
 }

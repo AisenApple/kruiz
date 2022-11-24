@@ -4,6 +4,10 @@
 
 .benefit__image {
     margin-bottom: 19px;
+
+    @include tablets {
+        margin-bottom: 24px;
+    }
 }
 
 .benefit__image-wrapper {
@@ -32,6 +36,9 @@
     font-weight: 700;
     font-weight: bold;
 
+    @include tablets {
+        margin-bottom: 20px;   
+    }
 }
 
 .benefit__desc {
@@ -41,4 +48,8 @@
     line-height: 19px;
     color: #666666;
     margin: 0 auto;
+
+    @include tablets {
+        max-width: 100%;
+    }
 }

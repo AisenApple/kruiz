@@ -7,10 +7,19 @@
 .order-section__title {
     color: inherit;
     margin-bottom: 58px;
+
+    @include tablets {
+        margin-bottom: 30px;
+    }
 }
 
 .form {
     display: flex;
+
+    @include tablets {
+        flex-direction: column;
+        padding: 0 12.5%;
+    }
 }
 
 .form__title {
@@ -26,6 +35,10 @@
 
     &:last-child {
         margin-right: 0;
+    }
+
+    @include tablets {
+        margin-right: 0px;
     }
 }
 
@@ -49,6 +62,10 @@
 
 .form__col-ml {
     margin-left: 27px;
+
+    @include tablets {
+        margin-left: 0px;
+    }
 }
 
 .form__input {
@@ -75,5 +92,9 @@
     border-radius: 4px;
     margin-bottom: 10px;
     padding: 58px;
-    
+}
+
+.form__btns {
+    display: flex;
+    justify-content: center;
 }

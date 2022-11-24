@@ -1,0 +1,39 @@
+$containerWidth: 940px;
+$baseFontSize: 18px;
+$tablets: 768px;
+
+.menu {
+    margin: 0 30px;
+    padding-top: 5px;
+
+    @include tablets {
+        display: none;
+    }
+}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu__item {
+    margin-right: 27px;
+    font-family: 'Aligreya Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    margin-right: 1.5rem;
+    margin-top: 10px;
+
+    &:last-child {
+    margin-right: 0;
+}
+}
+
+.menu__link {
+    text-decoration: none;
+    white-space: nowrap;
+}

@@ -25,6 +25,10 @@
     display: block;
     width: 70px;
     height: 24px;
+
+    @include tablets {
+        display: none;
+    }
 }
 
 .benefits__item:first-child {

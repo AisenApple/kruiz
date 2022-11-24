@@ -1,0 +1,10 @@
+.menu__item {
+  margin-right: 27px;
+}
+.menu__item:last-child {
+  margin-right: 27px;
+}
+
+.menu__link {
+  text-decoration: none;
+}
