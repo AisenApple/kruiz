@@ -15,7 +15,7 @@
         text-align: center;
 
         &::before {
-            content: url(../../img/hero__1.png);
+            content: url(../img/hero__1.png);
             //height: 323px;
             //width: 323px;
             margin-bottom: 33px;
@@ -36,7 +36,7 @@
     justify-content: space-between;
     height: 100%;
     padding: 24px 0 45px;
-    background: url(../../img/hero__1.png) left 97% center no-repeat;
+    background: url(../img/hero__1.png) left 97% center no-repeat;
     background-color: #F5F5F5;
 
     @include tablets {

@@ -157,7 +157,7 @@ img {
     text-align: center;
   }
   .hero__title-section::before {
-    content: url(../../img/hero__1.png);
+    content: url(../img/hero__1.png);
     margin-bottom: 33px;
   }
 }
@@ -181,7 +181,7 @@ img {
           justify-content: space-between;
   height: 100%;
   padding: 24px 0 45px;
-  background: url(../../img/hero__1.png) left 97% center no-repeat;
+  background: url(../img/hero__1.png) left 97% center no-repeat;
   background-color: #F5F5F5;
 }
 @media screen and (max-width: 768px) {
