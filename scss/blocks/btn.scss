@@ -1,19 +1,25 @@
 .btn {
-    font-size: 16px;
+    font-size: rem(16px);
     font-weight: bold;
-    padding: 21px 41px;
+    padding: rem(21px) rem(41px);
     text-transform: uppercase;
-    border-radius: 100px;
+    border-radius: rem(100px);
     line-height: 1;
     text-decoration: none;
     display: inline-block;
     border: none;
+
+    &--hero {
+        @include phones {
+            font-size: rem(19px);
+            line-height: rem(18px);
+        }
+    }
 }
 
 .btn--theme--red {
     background: #E01F3D;
     color: #fff;
-    margin-bottom: 94px;
 }
 
 .btn--theme--red:hover {
@@ -25,11 +31,11 @@
     text-transform: capitalize;
     background: transparent;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: rem(16px);
+    line-height: rem(19px);
     color: white;
     border: none;
-    padding: 0 21px 90px;
+    padding: 0 rem(21px) 0;
 }
 
 .btn--theme--transparent:hover {

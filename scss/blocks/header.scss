@@ -2,8 +2,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-right: 23px;
-    align-items: flex-start;
+    padding-right: rem(23px);
+    align-items: center;
+
+    @include phones {
+        
+    }
 }
 
 .phone-number.header__phone-number {

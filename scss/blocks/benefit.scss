@@ -3,17 +3,17 @@
 }
 
 .benefit__image {
-    margin-bottom: 19px;
+    margin-bottom: rem(19px);
 
     @include tablets {
-        margin-bottom: 24px;
+        margin-bottom: rem(24px);
     }
 }
 
 .benefit__image-wrapper {
     display: inline-block;
-    width: 126px;
-    height: 126px;
+    width: rem(126px);
+    height: rem(126px);
     position: relative;
     background: #F2F5F4;
     border-radius: 50%;
@@ -21,8 +21,8 @@
 }
 
 .benefit__icon {
-    max-width: 60px;
-    max-height: 62px;
+    max-width: rem(60px);
+    max-height: rem(62px);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -30,22 +30,22 @@
 }
 
 .benefit__title {
-    margin-bottom: 7px;
-    font-size: 24px;
-    line-height: 28px;
+    margin-bottom: rem(7px);
+    font-size: rem(24px);
+    line-height: rem(28px);
     font-weight: 700;
     font-weight: bold;
 
     @include tablets {
-        margin-bottom: 20px;   
+        margin-bottom: rem(20px);   
     }
 }
 
 .benefit__desc {
     max-width: 88%;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: rem(16px);
+    line-height: rem(19px);
     color: #666666;
     margin: 0 auto;
 

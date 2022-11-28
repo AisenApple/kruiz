@@ -3,7 +3,7 @@
 }
 
 .features__item {
-    margin-right: 18px;
+    margin-right: rem(18px);
 
     &:last-child {
         margin-right: 0;
@@ -11,7 +11,7 @@
 }
 
 .features__text {
-    font-size: 16px;
-    line-height: 18px;
-    width: 114px;
+    font-size: rem(16px);
+    line-height: rem(18px);
+    width: rem(114px);
 }

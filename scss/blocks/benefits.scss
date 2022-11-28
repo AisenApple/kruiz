@@ -1,12 +1,21 @@
 .benefits__main-title{
-    margin-bottom: 18px;
+    margin-bottom: rem(18px);
+}
+
+.benefits__conteiner {
+    @include tablets {
+        width: 99%;
+    }
+    @include phones {
+        width: 95%;
+    }
 }
 
 .benefits__list {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    margin-bottom: 100px;
+    margin-bottom: rem(100px);
 }
 
 .benefits__item {
@@ -14,17 +23,21 @@
     padding: 0 3%;
     text-align: center;
     position: relative;
+
+    @include tablets {
+        padding: 0;
+    }
 }
 
 .benefits__item::before {
     content: url(../img/shape.png);
     position: absolute;
-    top: 60px;
+    top: rem(60px);
     right: 0;
     transform: translateX(50%);
     display: block;
-    width: 70px;
-    height: 24px;
+    width: rem(70px);
+    height: rem(24px);
 
     @include tablets {
         display: none;

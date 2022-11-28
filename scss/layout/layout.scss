@@ -1,5 +1,5 @@
 html {
-    font-style: $baseFontSize;
+    font-size: $baseFontSize;
 
     @include tablets {
         font-size: $baseFontSize - 1px;

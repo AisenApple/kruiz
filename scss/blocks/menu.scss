@@ -1,10 +1,10 @@
-$containerWidth: 940px;
-$baseFontSize: 18px;
-$tablets: 768px;
+$containerWidth: rem(940px);
+$baseFontSize: rem(18px);
+$tablets: rem(768px);
 
 .menu {
-    margin: 0 30px;
-    padding-top: 5px;
+    margin: 0 rem(30px);
+    padding-top: rem(5px);
 
     @include tablets {
         display: none;
@@ -16,17 +16,17 @@ $tablets: 768px;
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
+    row-gap: rem(10px);
 }
 
 .menu__item {
-    margin-right: 27px;
+    margin-right: rem(27px);
     font-family: 'Aligreya Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 30px;
+    font-size: rem(18px);
+    line-height: rem(30px);
     margin-right: 1.5rem;
-    margin-top: 10px;
 
     &:last-child {
     margin-right: 0;
