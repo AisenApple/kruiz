@@ -1,28 +1,6 @@
-$containerWidth: rem(940px);
-$baseFontSize: rem(18px);
-
-$tablets: rem(768px);
-$phones: rem(480px);
-
-@function rem($px) {
-    @return $px / $baseFontSize + 0rem;
-}
-
-@mixin tablets {
-    @media screen and (max-width: $tablets) {
-        @content;
-    }
-}
-
-@mixin phones {
-    @media screen and (max-width: $phones) {
-        @content;
-    }
-}
-
 @import "layout/media";
-@import "blocks/menu";
 @import "layout/layout";
+@import "blocks/menu";
 @import "blocks/hero";
 @import "blocks/phone";
 @import "blocks/header";

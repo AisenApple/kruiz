@@ -10,6 +10,10 @@
     @include tablets {
         margin-bottom: rem(30px);
     }
+
+    @include phones {
+        margin-bottom: rem(40px);
+    }
 }
 
 .form {
@@ -18,6 +22,10 @@
     @include tablets {
         flex-direction: column;
         padding: 0 18%;
+    }
+
+    @include phones {
+        padding: 0;
     }
 }
 
@@ -47,21 +55,32 @@
     margin-bottom: rem(11px);
 
     @include tablets {
-        margin-bottom: rem(16px);
+        margin-bottom: rem(14px);
     }
-    
+
+    @include phones {
+        margin-bottom: rem(13px);
+    }
 
     &--textarea {
         margin-bottom: rem(18px);
 
         @include tablets {
-            margin-bottom: rem(30px);
+            margin-bottom: rem(20px);
+        }
+
+        @include phones {
+            margin-bottom: rem(24px);
         }
     }
 }
 
 .form__controls {
     margin-bottom: rem(20px);
+
+    @include phones {
+        justify-content: center;
+    }
 }
 
 .form__block {
@@ -110,8 +129,13 @@
     display: flex;
     justify-content: flex-start;
     margin-top: rem(46px);
+    margin-bottom: 0;
 
     @include tablets {
         justify-content: center;
+    }
+
+    @include phones {
+        margin-top: rem(39px);
     }
 }

@@ -15,7 +15,10 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    margin-bottom: rem(100px);
+
+    @include phones {
+        flex-direction: column;
+    }
 }
 
 .benefits__item {

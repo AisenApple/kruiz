@@ -18,6 +18,11 @@
     line-height: rem(19px);
 
     @include tablets {
-        padding: 0 8%;
+        padding: 0 12%;
+        margin-bottom: rem(55px);
+    }
+
+    @include phones {
+        padding: 0 5%;
     }
 }

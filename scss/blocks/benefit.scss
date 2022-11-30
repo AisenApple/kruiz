@@ -1,12 +1,23 @@
 .benefit {
     text-align: center;
+
+    @include phones {
+        display: flex;
+        align-items: center;
+        text-align: left;
+    }
 }
 
 .benefit__image {
     margin-bottom: rem(19px);
 
     @include tablets {
-        margin-bottom: rem(24px);
+        margin-bottom: rem(20px);
+    }
+
+    @include phones {
+        margin-bottom: 0;
+        margin-right: rem(12px);
     }
 }
 
@@ -29,6 +40,12 @@
     transform: translate(-50%, -50%);
 }
 
+.benefit__text {
+    @include phones {
+        padding-top: rem(10px);
+    }
+}
+
 .benefit__title {
     margin-bottom: rem(7px);
     font-size: rem(24px);
@@ -38,6 +55,14 @@
 
     @include tablets {
         margin-bottom: rem(20px);   
+    }
+
+    @include tablets {
+        margin-bottom: rem(6px);
+    }
+
+    @include phones {
+        margin-bottom: rem(32px);
     }
 }
 

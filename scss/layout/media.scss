@@ -1,3 +1,9 @@
+$containerWidth: 940px;
+$baseFontSize: 18px;
+
+$tablets: 768px;
+$phones: 480px;
+
 @function rem($px) {
     @return $px / $baseFontSize + 0rem;
 }

@@ -22,7 +22,9 @@
                 <div class="container hero__container">
                     <header class="header">
                         <div class="logo">
-                            <img src="./img/logo.png" alt="Beats logo" class="logo__pic">
+                            <svg class="logo__pic">
+                                <use xlink:href="./img/sprite.svg#logo__main"></use>
+                            </svg>
                         </div>
                         <nav class="menu">
                             <ul class="menu__list">
@@ -97,7 +99,7 @@
                 </div>
             </section>
             <section class="section benefits">
-                <div class="container benefits">
+                <div class="container benefits__conteiner">
                     <div class="headline">
                         <h2 class="section__title headline__title benefits__main">Почему Beats Solo 3?</h2>
                         <div class="headline__subtitle">Процессор W1 работает невероятно эффективно и позволяет легко
@@ -268,6 +270,25 @@
                     </form>
                 </div>
             </section>
+            <footer class="footer-container">
+                <div class="container">
+                    <div class="footer">
+                        <div class="footer__map">
+                            <img src="./img/map.png" alt="" class="footer__map-img">
+                        </div>
+                        <address class="contacts">
+                            <div class="contacts__desc">Москва, ул.Новый Арбат, д.31/12</div>
+                            <a href="tel:+78009039090" class="phone-number">
+                                <span class="phone-number__icon">
+                                    <img src="./img/phone.png" class="phone-number__icon-elem" alt="phone icon">
+                                </span>
+                                <span class="phone-number__text">8 800 903 90 90</span>
+                            </a>
+                        </address>
+                        <div class="footer__col"></div>
+                    </div>
+                </div>
+            </footer>
         </div>
     </div>
     <nav class="fixed-menu">
