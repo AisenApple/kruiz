@@ -1,12 +1,36 @@
 .contacts {
     font-family: "Play", Arial, Helvetica, sans-serif;
     font-size: rem(18px);
+    margin-bottom: rem(3px);
+
+    @include tablets {
+        margin-bottom: rem(30px);
+    }
 }
 
 .contacts__desc {
     line-height: rem(24px);
+
+    @include tablets {
+        margin-bottom: rem(4px);
+    }
+
+    @include phones {
+        text-align: center;
+        margin-bottom: rem(12px);
+    }
 }
 
 .phone-number__text {
     line-height: rem(21px);
+
+    @include tablets {
+        font-size: 21px;
+        line-height: 24px;
+        color: red;
+    }
+
+    @include phones {
+        margin-bottom: rem(19px);
+    }
 }

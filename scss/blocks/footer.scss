@@ -1,9 +1,22 @@
-.footer__map {
-    
-}
-
 .footer__map-img {
     width: rem(1100px);
     height: rem(652px);
     margin-bottom: rem(20px);
+
+    @include tablets {
+        width: rem(768px);
+        height: rem(526px);
+        margin-bottom: rem(30px);
+    }
+
+    @include phones {
+        width: rem(480px);
+        height: rem(482px);
+        margin-bottom: rem(20px);
+    }
+}
+
+.footer__col {
+    display: flex;
+    align-items: center;
 }
