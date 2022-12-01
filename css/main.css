@@ -261,9 +261,11 @@ img {
       flex-shrink: 0;
   margin-top: 3px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .phone-number {
-    display: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -292,7 +294,7 @@ img {
   align-items: center;
 }
 @media screen and (max-width: 768px) {
-  .phone-number.header__phone-number {
+  .header__phone-number {
     display: none;
   }
 }
@@ -407,7 +409,7 @@ img {
 }
 
 .section {
-  height: 100vh;
+  height: 80vh;
   min-height: 36.1111111111rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -521,6 +523,14 @@ img {
     padding: 0;
   }
 }
+@media screen and (max-width: 480px) {
+  .benefits__item {
+    margin-bottom: 1.3888888889rem;
+  }
+  .benefits__item:last-child {
+    margin-bottom: 0;
+  }
+}
 
 .benefits__item::before {
   content: url(../img/shape.png);
@@ -559,9 +569,6 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     text-align: left;
   }
 }
@@ -626,7 +633,7 @@ img {
 }
 @media screen and (max-width: 480px) {
   .benefit__title {
-    margin-bottom: 1.7777777778rem;
+    margin-bottom: 0.2777777778rem;
   }
 }
 
@@ -1093,23 +1100,63 @@ img {
   height: 2.2222222222rem;
 }
 
-.footer__map-img {
-  width: 61.1111111111rem;
-  height: 36.2222222222rem;
-  margin-bottom: 1.1111111111rem;
+.logo__pic {
+  width: 100%;
+  height: 100%;
+}
+
+.map {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 0;
+}
+
+.map-box {
+  width: 100%;
+  height: 100%;
+}
+
+.map__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.footer-container {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #fff;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1.1111111111rem 0;
 }
 @media screen and (max-width: 768px) {
-  .footer__map-img {
-    width: 42.6666666667rem;
-    height: 29.2222222222rem;
-    margin-bottom: 1.6666666667rem;
+  .footer {
+    padding: 1.6666666667rem 0;
   }
 }
 @media screen and (max-width: 480px) {
-  .footer__map-img {
-    width: 26.6666666667rem;
-    height: 26.7777777778rem;
-    margin-bottom: 1.1111111111rem;
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    padding: 1.1111111111rem 0 1.6666666667rem;
   }
 }
 
@@ -1121,6 +1168,16 @@ img {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 480px) {
+  .footer__col--margin-bottom {
+    margin-bottom: 0.8888888889rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer__col {
+    margin-right: 0.7777777778rem;
+  }
+}
 
 .socials {
   display: -webkit-box;
@@ -1129,7 +1186,20 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 0.5555555556rem;
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
+}
+@media screen and (max-width: 768px) {
+  .socials {
+    -webkit-transform: translateX(-29px);
+            transform: translateX(-29px);
+  }
+}
+@media screen and (max-width: 480px) {
+  .socials {
+    -webkit-transform: none;
+            transform: none;
+  }
 }
 
 .socials__link {
@@ -1140,64 +1210,74 @@ img {
   width: 1.6666666667rem;
   height: 1.6666666667rem;
 }
+@media screen and (max-width: 768px) {
+  .socials__link {
+    width: 1.7777777778rem;
+    height: 1.7777777778rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .socials__link {
+    width: 1.3333333333rem;
+    height: 1.3333333333rem;
+  }
+}
+
+.socials__icon {
+  width: 100%;
+  height: 100%;
+}
 
 .socials__item {
   position: relative;
+  margin-right: 0.5555555556rem;
 }
-
-.socials__item :last-child {
+.socials__item:last-child {
   margin-right: 0;
 }
 
-.socials__item--icon-telegram::after {
-  content: "";
-  display: block;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 1.6666666667rem;
-  height: 1.6666666667rem;
+.contacts {
+  font-family: "Play", Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  margin-bottom: 0.1666666667rem;
+}
+@media screen and (max-width: 768px) {
+  .contacts {
+    margin-bottom: 1.6666666667rem;
+  }
 }
 
-.socials__item--icon-telegram:hover::after {
-  color: black;
+.contacts__desc {
+  line-height: 1.3333333333rem;
+}
+@media screen and (max-width: 768px) {
+  .contacts__desc {
+    font-size: 1rem;
+    line-height: 1.1666666667rem;
+    margin-bottom: 0.2222222222rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .contacts__desc {
+    margin-bottom: 0.6666666667rem;
+    font-size: 1rem;
+  }
 }
 
-.socials__item--icon-vk::after {
-  content: "";
-  display: block;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 1.6666666667rem;
-  height: 1.6666666667rem;
+.phone-number__text {
+  line-height: 1.1666666667rem;
 }
-
-.socials__item--icon-vk:hover::after {
-  color: black;
+@media screen and (max-width: 768px) {
+  .phone-number__text {
+    font-size: 21px;
+    line-height: 24px;
+    color: red;
+  }
 }
-
-.socials__item--icon-fb::after {
-  content: "";
-  display: block;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 1.6666666667rem;
-  height: 1.6666666667rem;
+@media screen and (max-width: 480px) {
+  .phone-number__text {
+    font-size: 0.8888888889rem;
+    line-height: 1.1666666667rem;
+    color: #292929;
+  }
 }
-
-.socials__item--icon-fb:hover::after {
-  color: black;
-}
-
-.socials__item--icon-insta::after {
-  content: "";
-  display: block;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 1.6666666667rem;
-  height: 1.6666666667rem;
-}
-
-.socials__item--icon-insta:hover::after {
-  color: black;
-}
-/*# sourceMappingURL=main.css.map */

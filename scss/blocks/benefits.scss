@@ -30,6 +30,14 @@
     @include tablets {
         padding: 0;
     }
+
+    @include phones {
+        margin-bottom: rem(25px);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
 }
 
 .benefits__item::before {

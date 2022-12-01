@@ -12,12 +12,14 @@
     line-height: rem(24px);
 
     @include tablets {
+        font-size: rem(18px);
+        line-height: rem(21px);
         margin-bottom: rem(4px);
     }
 
     @include phones {
-        text-align: center;
         margin-bottom: rem(12px);
+        font-size: rem(18px);
     }
 }
 
@@ -31,6 +33,8 @@
     }
 
     @include phones {
-        margin-bottom: rem(19px);
+        font-size: rem(16px);
+        line-height: rem(21px);
+        color: #292929;
     }
 }

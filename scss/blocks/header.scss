@@ -10,7 +10,7 @@
     }
 }
 
-.phone-number.header__phone-number {
+.header__phone-number {
     @include tablets {
         display: none;
     }

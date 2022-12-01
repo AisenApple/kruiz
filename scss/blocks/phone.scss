@@ -8,8 +8,8 @@
     flex-shrink: 0;
     margin-top: 3px;
 
-    @include tablets {
-        display: none;
+    @include phones {
+        justify-content: center;
     }
 }
 

@@ -3,7 +3,6 @@
 
     @include phones {
         display: flex;
-        align-items: center;
         text-align: left;
     }
 }
@@ -62,7 +61,7 @@
     }
 
     @include phones {
-        margin-bottom: rem(32px);
+        margin-bottom: rem(5px);
     }
 }
 
