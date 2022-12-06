@@ -23,7 +23,7 @@
                     <header class="header">
                         <div class="logo">
                             <svg class="logo__pic">
-                                <use xlink:href="./img/sprite.svg#logo__main"></use>
+                                <use xlink:href="img/sprite.svg#logo__main"></use>
                             </svg>
                         </div>
                         <nav class="menu">
@@ -53,15 +53,18 @@
                         </nav>
                         <a href="tel:+78009039090" class="phone-number header__phone-number">
                             <svg class="phone-number__icon-svg">
-                                <use xlink:href="./img/sprite.svg#phone"></use>
+                                <use xlink:href="img/sprite.svg#phone"></use>
                             </svg>
                             <span class="phone-number__text">8 800 903 90 90</span>
                         </a>
-                        <a href="" class="hamburger">
-                            <span class="hamburger__plank"></span>
-                            <span class="hamburger__plank"></span>
-                            <span class="hamburger__plank"></span>
-                        </a>
+                        <div class="fullscreen-menu" id="openOverlay">
+                            <a class="hamburger">
+                                <!--<span class="hamburger__menu">Menu</span>-->
+                                <span class="hamburger__plank"></span>
+                                <span class="hamburger__plank"></span>
+                                <span class="hamburger__plank"></span>
+                            </a>
+                        </div>
                     </header>
                     <div class="hero__title-section">
                         <h1 class="hero__main-title">Беспроводные наушники Beats Solo 3</h1>
@@ -72,7 +75,7 @@
                         <ul class="features">
                             <li class="features__item feature">
                                 <svg class="feature__icon">
-                                    <use xlink:href="./img/sprite.svg#noise"></use>
+                                    <use xlink:href="img/sprite.svg#noise"></use>
                                 </svg>
                                 <div class="features__text">
                                     Безупречный звук
@@ -80,7 +83,7 @@
                             </li>
                             <li class="features__item feature">
                                 <svg class="feature__icon">
-                                    <use xlink:href="./img/sprite.svg#charging"></use>
+                                    <use xlink:href="img/sprite.svg#charging"></use>
                                 </svg>
                                 <div class="features__text">
                                     До 40 часов работы
@@ -88,7 +91,7 @@
                             </li>
                             <li class="features__item feature">
                                 <svg class="feature__icon">
-                                    <use xlink:href="./img/sprite.svg#group"></use>
+                                    <use xlink:href="img/sprite.svg#group"></use>
                                 </svg>
                                 <div class="features__text">
                                     Технология Fast Fuel
@@ -111,7 +114,7 @@
                             <div class="benefit__image">
                                 <div class="benefit__image-wrapper">
                                     <svg class="benefit__icon">
-                                        <use xlink:href="./img/sprite.svg#bettery"></use>
+                                        <use xlink:href="img/sprite.svg#bettery"></use>
                                     </svg>
                                 </div>
                             </div>
@@ -127,7 +130,7 @@
                             <div class="benefit__image">
                                 <div class="benefit__image-wrapper">
                                     <svg class="benefit__icon">
-                                        <use xlink:href="./img/sprite.svg#sound"></use>
+                                        <use xlink:href="img/sprite.svg#sound"></use>
                                     </svg>
                                 </div>
                             </div>
@@ -144,7 +147,7 @@
                             <div class="benefit__image">
                                 <div class="benefit__image-wrapper">
                                     <svg class="benefit__icon">
-                                        <use xlink:href="./img/sprite.svg#time"></use>
+                                        <use xlink:href="img/sprite.svg#time"></use>
                                     </svg>
                                 </div>
                             </div>
@@ -157,6 +160,107 @@
                             </div>
                         </li>
                     </ul>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <div class="shop__wrapper">
+                        <div class="shop__slider">
+                            <a href="" class="arrow" id="left" href="#">----</a>
+                            <ul class="beats" id="beats">
+                                <li class="beats__item">
+                                    <div class="beats__container">
+                                        <img src="./img/beats__white.png" alt="" class="beats__container-img">
+                                    </div>
+                                    <div class="beats__text">
+                                        <a href="" class="dropdown__link">
+                                            <img src="./img/gear.png" alt="" class="dropdown__link-gear">
+                                        </a>
+                                        <div class="dropdown">
+                                            <div class="dropdown__menu">
+                                                <ul class="dropdown__list">
+                                                    <li class="dropdown__item">
+                                                        <div class="dropdown__characteristic">
+                                                            <ul class="dropdown__characteristic-item">
+                                                                <li class="dropdown__icon">
+                                                                    <svg class="dropdown__icon-svg">
+                                                                        <use xlink:href="img/sprite.svg#Bluetooth">
+                                                                        </use>
+                                                                    </svg>
+                                                                    <div class="dropdown__icon-text">Bluetooth</div>
+                                                                    <div class="dropdown__icon-characteristic">4.0</div>
+                                                                </li>
+                                                                <li class="dropdown__icon">
+                                                                    <svg class="dropdown__icon-svg">
+                                                                        <use xlink:href="img/sprite.svg#dalnost"></use>
+                                                                    </svg>
+                                                                    <div class="dropdown__icon-text">Дальность</div>
+                                                                    <div class="dropdown__icon-characteristic">12 м
+                                                                    </div>
+                                                                </li>
+                                                                <li class="dropdown__icon">
+                                                                    <svg class="dropdown__icon-svg">
+                                                                        <use xlink:href="img/sprite.svg#zaradka"></use>
+                                                                    </svg>
+                                                                    <div class="dropdown__icon-text">Зарядка</div>
+                                                                    <div class="dropdown__icon-characteristic">3 ч</div>
+                                                                </li>
+                                                                <li class="dropdown__icon">
+                                                                    <svg class="dropdown__icon-svg">
+                                                                        <use xlink:href="img/sprite.svg#ves"></use>
+                                                                    </svg>
+                                                                    <div class="dropdown__icon-text">Вес</div>
+                                                                    <div class="dropdown__icon-characteristic">215гр
+                                                                    </div>
+                                                                </li>
+                                                                <li class="dropdown__icon">
+                                                                    <svg class="dropdown__icon-svg">
+                                                                        <use xlink:href="img/sprite.svg#garantia"></use>
+                                                                    </svg>
+                                                                    <div class="dropdown__icon-text">Гарантия</div>
+                                                                    <div class="dropdown__icon-characteristic">1 год
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="beats__title">
+                                            beats solo 3. цвет «атласное серебро»
+                                        </div>
+                                        <div class="beats__about">
+                                            <div class="beats__desc-text">
+                                                Беспроводные наушники Beats Solo3 готовы к работе в любой момент.
+                                                Включите их и поднесите к своему iPhone — они мгновенно подключатся к
+                                                нему.
+                                            </div>
+                                            <div class="beats__character">
+                                                <div class="beats__character-static">
+                                                    <div class="beats__character-first">Зарядка</div>
+                                                    <div class="beats__character-second">2 Часа</div>
+                                                </div>
+                                                <div class="beats__character-static">
+                                                    <div class="beats__character-first">Вес</div>
+                                                    <div class="beats__character-second">215 грамм</div>
+                                                </div>
+                                            </div>
+                                            <div class="beats__buy">
+                                                <div class="beats__buy-price">
+                                                    14 990 Р
+                                                </div>
+                                                <div class="beats__buy-button btn btn--theme--red btn--hero">
+                                                    Заказать
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <a href="" class="arrow" id="right" href="#">----</a>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section class="section reviews">
@@ -276,9 +380,9 @@
                     </form>
                 </div>
             </section>
-            <section class="section map section__map">
+            <section class="section map">
                 <div class="map__box">
-                    <img src="./img/map.png" alt="" class="map-img">
+                    <img src="./img/map.png" alt="" class="map__img">
                 </div>
                 <footer class="footer-container">
                     <div class="container">
@@ -288,7 +392,7 @@
                                     <div class="contacts__desc">Москва, ул.Новый Арбат, д.31/12</div>
                                     <a href="tel:+78009039090" class="phone-number">
                                         <svg class="phone-number__icon-svg">
-                                            <use xlink:href="./img/sprite.svg#phone"></use>
+                                            <use xlink:href="img/sprite.svg#phone"></use>
                                         </svg>
                                         <span class="phone-number__text">8 800 903 90 90</span>
                                     </a>
@@ -299,28 +403,28 @@
                                     <li class="socials__item">
                                         <a href="" class="socials__link">
                                             <svg class="socials__icon">
-                                                <use xlink:href="./img/sprite.svg#vk"></use>
+                                                <use xlink:href="img/sprite.svg#vk"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="socials__item">
                                         <a href="" class="socials__link">
                                             <svg class="socials__icon">
-                                                <use xlink:href="./img/sprite.svg#fb"></use>
+                                                <use xlink:href="img/sprite.svg#fb"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="socials__item">
                                         <a href="" class="socials__link">
                                             <svg class="socials__icon">
-                                                <use xlink:href="./img/sprite.svg#insta"></use>
+                                                <use xlink:href="img/sprite.svg#insta"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="socials__item">
                                         <a href="" class="socials__link">
                                             <svg class="socials__icon">
-                                                <use xlink:href="./img/sprite.svg#telegram"></use>
+                                                <use xlink:href="img/sprite.svg#telegram"></use>
                                             </svg>
                                         </a>
                                     </li>
@@ -363,6 +467,7 @@
             </li>
         </ul>
     </nav>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>

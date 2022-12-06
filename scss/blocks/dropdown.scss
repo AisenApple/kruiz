@@ -1,0 +1,24 @@
+.dropdown {
+    position: relative;
+}
+
+.dropdown__link {
+    height: rem(32px);
+    width: rem(32px);
+}
+
+.dropdown:hover .dropdown__menu {
+    display: block;
+}
+
+
+
+.dropdown__icon{
+    display: none;
+    justify-content: center;
+}
+
+.dropdown__icon-svg {
+    height: rem(32px);
+    width: rem(32px);
+}

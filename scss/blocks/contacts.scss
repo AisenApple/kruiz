@@ -6,6 +6,10 @@
     @include tablets {
         margin-bottom: rem(30px);
     }
+
+    @include phones {
+        margin-bottom: rem(20px);
+    }
 }
 
 .contacts__desc {
@@ -13,8 +17,7 @@
 
     @include tablets {
         font-size: rem(18px);
-        line-height: rem(21px);
-        margin-bottom: rem(4px);
+        line-height: rem(24px);
     }
 
     @include phones {
@@ -27,8 +30,8 @@
     line-height: rem(21px);
 
     @include tablets {
-        font-size: 21px;
-        line-height: 24px;
+        font-size: rem(21px);
+        line-height: rem(24px);
         color: red;
     }
 
