@@ -147,9 +147,9 @@
         <path d="M23.9417 19.5H2.05833C0.975 19.5 0 20.3667 0 21.5583V21.8833C0 22.9667 0.866667 23.9417 2.05833 23.9417H24.05C25.1333 23.9417 26.1083 23.075 26.1083 21.8833V21.5583C26 20.475 25.1333 19.5 23.9417 19.5Z" fill="#292929"/>
         </g>
         <defs>
-        <clipPath   clipPath id="clip0_38153_575">
+        <clipPathclipPath id="clip0_38153_575">
         <rect width="26" height="24" fill="white"/>
-        </clipPath>
+        </clipPathclipPath>
         </defs>
     </symbol>
     <symbol id="close" viewBox="0 0 20 20">
@@ -163,6 +163,13 @@
         </defs>
     </symbol>
 
+
+    <symbol id="right" viewBox="0 0 15 29">
+        <path d="M1 1L13.0858 13.0858C13.8668 13.8668 13.8668 15.1332 13.0858 15.9142L1 28" fill="transparent" stroke="black" stroke-width="2" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="left" viewBox="0 0 15 29">
+        <path d="M14 28L1.91422 15.9142C1.13317 15.1332 1.13317 13.8668 1.91421 13.0858L14 1" fill="transparent" stroke="black" stroke-width="2" stroke-linecap="round"/>
+    </symbol>
 
 
 
