@@ -19,17 +19,25 @@
     }
 
     &--prev {
-        right: rem(-24px);
+        left: rem(-24px);
+
+        @include tablets {
+            left: 18%;
+        }
+
+        @include phones {
+            left: 0;
+        }
+
+    &--next {
+        right: -24px;
 
         @include tablets {
             right: 18%;
         }
 
-    &--next {
-        left: rem(-24px);
-
-        @include tablets {
-            left: 18%;
+        @include phones {
+            right: 0;
         }
     }
     }
