@@ -1616,16 +1616,16 @@ img {
     left: 0;
   }
 }
-.shop__arrow--prev--next {
-  right: -1.3333333333rem;
+.shop__arrow--next {
+  right: -24px;
 }
 @media screen and (max-width: 768px) {
-  .shop__arrow--prev--next {
+  .shop__arrow--next {
     right: 18%;
   }
 }
 @media screen and (max-width: 480px) {
-  .shop__arrow--prev--next {
+  .shop__arrow--next {
     right: 0;
   }
 }
