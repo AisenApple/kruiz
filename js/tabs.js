@@ -12,5 +12,5 @@ $(".interactive-avatar__link").on('click', e => {
     const curItem = $this.closest(".reviews__switcher-item");
 
     itemToShow.addClass("active").siblings().removeClass("active");
-    curItem.addClass("active").siblings().removeClass("active");
+    curItem.addClass("interactive-avatar--active").siblings().removeClass("interactive-avatar--active");
 });

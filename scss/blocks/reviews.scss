@@ -1,9 +1,9 @@
 .reviews__item {
     display: none;
-}
 
-.active {
-    display: contents;
+    &.active {
+        display: block;
+    }
 }
 
 .reviews__main-title {

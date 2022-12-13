@@ -16,9 +16,17 @@
     color: #000;
 
     @include tablets {
+        font-size: rem(48px);
+        line-height: rem(52px);
+        margin-bottom: rem(33px);
+    }
+
+    @include phones {
         font-size: rem(32px);
         line-height: rem(36px);
+        margin-bottom: rem(36px);
     }
+    
 }
 
 .section__title-form {

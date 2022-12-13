@@ -1,3 +1,14 @@
+.bx-wrapper {
+    margin-bottom: 0;
+    box-shadow: none;
+    border: none;
+    background: none;
+}
+
+.bx-controls {
+    display: none;
+}
+
 .shop {
     background: #f8faf9;
 }
@@ -16,6 +27,11 @@
     @include tablets {
         transform: none;
         top: rem(150px);
+    }
+
+    @include phones {
+        width: rem(13.5px);
+        height: rem(27px);
     }
 
     &--prev {
@@ -40,7 +56,6 @@
             right: 0;
         }
     }
-    
 }
 
 .shop__arrow-svg {

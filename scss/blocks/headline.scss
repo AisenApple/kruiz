@@ -8,6 +8,14 @@
 
     @include tablets {
         margin-bottom: rem(11px);
+        font-size: rem(48px);
+        line-height: rem(52px);
+    }
+
+    @include phones {
+        font-size: rem(32px);
+        line-height: rem(36px);
+        margin-bottom: rem(11px);
     }
 }
 

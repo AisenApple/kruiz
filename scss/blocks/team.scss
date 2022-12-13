@@ -1,7 +1,17 @@
 .team {
     display: flex;
     align-items: flex-start;
-    justify-content: space-between; 
+    justify-content: space-between;
+
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @include phones {
+        align-items: center;
+        flex-direction: column;
+    }
 }
 
 .team__item {
@@ -23,6 +33,19 @@
     width: rem(220px);
     height: rem(290px);
     margin-bottom: rem(25px);
+
+    @include tablets {
+        margin: 0 auto;
+        margin-bottom: rem(21px);
+    }
+}
+
+.team__content-block {
+    
+    @include tablets {
+        max-width: rem(260px);
+        margin: 0 auto;
+    }
 }
 
 .team__title {
@@ -34,16 +57,52 @@
     font-weight: 700;
     font-size: rem(18px);
     line-height: rem(21px);
+    margin-bottom: rem(11px);
+
+    @include tablets {
+        font-size: rem(21px);
+        line-height: rem(25px);
+        margin-bottom: rem(16px);
+    }
 }
 
 .team__content {
     overflow: hidden;
     height: 0;
     transition: .3s;
+
+    @include tablets {
+        margin-bottom: rem(13px);
+    }
+}
+
+.team__content-block-work {
+    font-weight: 400;
+    font-size: rem(16px);
+    line-height: rem(18.5px);
+    color: #000;
+    margin-bottom: rem(4px);
+
+    @include tablets {
+        font-weight: 700;
+        font-size: rem(18px);
+        line-height: rem(21px);
+        margin-bottom: rem(10px);
+    }
+}
+
+.team__content-block-desc {
+    font-weight: 400;
+    font-size: rem(16px);
+    line-height: rem(18.5px);
+    color: #666;
+
+    @include tablets {
+
+    }
 }
 
 .team--version--desctop {
-    display: none;
     @include tablets {
         display: none;
     }
@@ -58,13 +117,10 @@
     top: 100%;
 }
 
-.team--version--phones {
-    
-    @include tablets {
-        display: none;
-    }
+.team--version--mobile {
+    display: none;
 
-    @include phones {
-        display: none;
+    @include tablets {
+        display: block;
     }
 }

@@ -56,10 +56,6 @@
         margin-bottom: rem(20px);   
     }
 
-    @include tablets {
-        margin-bottom: rem(6px);
-    }
-
     @include phones {
         margin-bottom: rem(5px);
     }
