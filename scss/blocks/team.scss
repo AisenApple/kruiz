@@ -19,6 +19,16 @@
     flex: 1;
     position: relative;
     margin-right: rem(20px);
+
+    &.active {
+        .team__title::after {
+            transform: rotate(180deg);
+        }
+    }
+
+    @include tablets {
+        margin-right: 0;
+    }
 }
 
 .team__item:first-child {
@@ -38,6 +48,11 @@
         margin: 0 auto;
         margin-bottom: rem(21px);
     }
+
+    @include phones {
+        width: rem(138px);
+        height: rem(180px);
+    }
 }
 
 .team__content-block {
@@ -50,19 +65,31 @@
 
 .team__title {
     color: #292929;
-    display: inline-flex;
+    display: flex;
     align-items: center;
+    justify-content: center;
     border: none;
     text-decoration: none;
     font-weight: 700;
     font-size: rem(18px);
     line-height: rem(21px);
-    margin-bottom: rem(11px);
+    margin: 0 auto rem(11px);
+    background: transparent;
+
+    &::after {
+        content: '';
+        background: url(../img/polygon.jpg) center center / contain no-repeat;
+        width: rem(9px);
+        height: rem(9px);
+        margin-left: rem(4px);
+        transition: transform .3s;
+    }
 
     @include tablets {
         font-size: rem(21px);
         line-height: rem(25px);
         margin-bottom: rem(16px);
+        margin: 0 auto rem(16px);
     }
 }
 

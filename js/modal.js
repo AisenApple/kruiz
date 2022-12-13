@@ -28,7 +28,7 @@ $('.form').on('submit', e => {
 
     if (isValid) {
         const request = $.ajax({
-            url: "",
+            url: "https://webdev-api.loftschool.com/sendmail",
             method: "post",
             data: {
                 name: name.val(),
@@ -37,36 +37,27 @@ $('.form').on('submit', e => {
                 to: to.val(),
             },
             error: data => {
-                const message = data.responseJSON.message;
+                const message = 'Произошла ошибка. Попробуйте еще раз';
                 content.text(message);
                 modal.addClass("error-modal");
-
-                $.fancybox.open({
-                    src: "#modal",
-                    type: "inline"
-                });
             }
         });
         request.done((data) => {
             content.text(data.message);
+            modal.removeClass("error-modal");
         });
+        request.fail(data => {
+            const message = 'Произошла ошибка. Попробуйте еще раз';
+            content.text(message);
+            modal.addClass("error-modal");
+        });
+        request.always(() => {
+            $.fancybox.open({
+                src: "#modal",
+                type: "inline"
+            });
+        })
     }
-    request.fail(data => {
-        const message = data.responseJSON.message;
-        content.text(message);
-        modal.addClass("error-modal");
-
-        $.fancybox.open({
-            src: "#modal",
-            type: "inline"
-        });
-    });
-    request.always(() => {
-        $.fancybox.open({
-            src: "#modal",
-            type: "inline"
-        });
-    })
 });
 
 $('.app-submit-btn').on('click', e => {

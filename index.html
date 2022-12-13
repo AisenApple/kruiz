@@ -376,14 +376,8 @@
                                 <img src="./img/alla.png" class="team__member-png">
                             </div>
                             <button class="team__title" type="button">
-                                <div class="team__title">
                                     Алла Иванова
-                                </div>
-                                <div class="team__title-img">
-                                    <img src="./img/Polygon.jpg" alt="" class="team__title-red">
-                                </div>
                             </button>
-                            
                             <div class="team__content">
                                 <div class="team__content-block">
                                     <div class="team__content-block-work">
@@ -612,11 +606,11 @@
                             <div class="form__row">
                                 <label for="" class="form__block">
                                     <div class="form__title">Имя</div>
-                                    <input type="text" name="name" class="form__input">
+                                    <input type="text" name="name" class="form__input" required>
                                 </label>
                                 <label for="" class="form__block">
                                     <div class="form__title">Телефон</div>
-                                    <input type="text" name="phone" class="form__input">
+                                    <input type="text" name="phone" class="form__input" required>
                                 </label>
                             </div>
                             <div class="form__row">
@@ -648,7 +642,7 @@
                             <div class="form__row form__row--textarea">
                                 <label class="form__block">
                                     <div class="form__title">Комментарий</div>
-                                    <textarea name="comment" class="form__input form__input--textarea"></textarea>
+                                    <textarea name="comment" class="form__input form__input--textarea" required></textarea>
                                 </label>
                             </div>
                             <div class="form__row form__controls">
@@ -775,16 +769,7 @@
             </div>
         </div>
     </div>
-    <div class="error-modal" id="modal">
-        <div class="error-modal__container">
-            <div class="error-modal__content">
-                Отправить письмо не удалось
-            </div>
-            <div class="modal__button-container">
-                <a href="#" class="btn btn--theme--red app-submit-btn">Закрыть</a>
-            </div>
-        </div>
-    </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>

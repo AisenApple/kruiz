@@ -1718,6 +1718,15 @@ img {
   position: relative;
   margin-right: 1.1111111111rem;
 }
+.team__item.active .team__title::after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+@media screen and (max-width: 768px) {
+  .team__item {
+    margin-right: 0;
+  }
+}
 
 .team__item:first-child {
   padding-left: 0;
@@ -1738,6 +1747,12 @@ img {
     margin-bottom: 1.1666666667rem;
   }
 }
+@media screen and (max-width: 480px) {
+  .team__member {
+    width: 7.6666666667rem;
+    height: 10rem;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .team__content-block {
@@ -1748,24 +1763,40 @@ img {
 
 .team__title {
   color: #292929;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border: none;
   text-decoration: none;
   font-weight: 700;
   font-size: 1rem;
   line-height: 1.1666666667rem;
-  margin-bottom: 0.6111111111rem;
+  margin: 0 auto 0.6111111111rem;
+  background: transparent;
+}
+.team__title::after {
+  content: "";
+  background: url(../img/polygon.jpg) center center/contain no-repeat;
+  width: 0.5rem;
+  height: 0.5rem;
+  margin-left: 0.2222222222rem;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 @media screen and (max-width: 768px) {
   .team__title {
     font-size: 1.1666666667rem;
     line-height: 1.3888888889rem;
     margin-bottom: 0.8888888889rem;
+    margin: 0 auto 0.8888888889rem;
   }
 }
 
@@ -1830,15 +1861,18 @@ img {
 
 .modal {
   display: none;
+  color: #000;
+}
+
+.modal__container {
+  text-align: center;
 }
 
 .modal__content {
   margin-bottom: 1rem;
-  color: #000;
 }
 @media screen and (max-width: 480px) {
   .modal__content {
-    color: #000;
     font-weight: 700;
     font-size: 1rem;
     line-height: 1.3333333333rem;
@@ -1853,5 +1887,6 @@ img {
 }
 
 .error-modal {
-  border-color: yellow;
+  border: 1px solid red;
+  color: red;
 }

@@ -1,13 +1,16 @@
 .modal {
     display: none;
+    color: #000;
+}
+
+.modal__container {
+    text-align: center;
 }
 
 .modal__content {
     margin-bottom: rem(18px);
-    color: #000;
 
     @include phones {
-        color: #000;
         font-weight: 700;
         font-size: rem(18px);
         line-height: rem(24px);
@@ -20,5 +23,6 @@
 }
 
 .error-modal {
-    border-color: yellow;
+    border: 1px solid red;
+    color: red;
 }
