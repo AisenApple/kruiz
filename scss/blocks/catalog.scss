@@ -1,0 +1,30 @@
+.catalog-menu-section {
+    position: relative;
+    color: #fff;
+    background: url(./img/catalog.png) center center / cover no-repeat;
+}
+
+.catalog__menu {
+    position: absolute;
+    display: flex;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.catalog__menu-item {
+    display: flex;
+}
+
+.catalog__menu__title {
+    position: relative;
+    width: rem(100px);
+}
+
+.catalog__menu-content {
+    background: rgba(51, 53, 55, 0.9);
+    width: 0;
+    position: relative;
+    overflow: hidden;
+    transition: width .8s;
+}

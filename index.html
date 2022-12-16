@@ -461,7 +461,7 @@
                                         Специалист по упаковке
                                     </div>
                                     <div class="team__content-block-desc">
-                                        Автор запоминающегося стиля наших батончиков.
+                                        Автор запоминающегося стиля наших наушников.
                                     </div>
                                 </div>
                             </div>
@@ -505,8 +505,39 @@
                             </div>
                         </li>
                     </ul>
-
                 </div>
+            </section>
+            <section class="section catalog__menu-section">
+                <h1 class="section__title catalog__menu-section-title">Меню</h1>
+                <ul class="catalog__menu" id="catalog__menu">
+                    <li class="catalog__menu-item" id="catalog__menu-item">
+                        <a href="" class="catalog__menu__title" id="catalog__menu__title">
+                            <div class="catalog__menu-text">«Атласное серебро»</div>
+                        </a>
+                        <div class="catalog__menu-content" id="catalog__menu-content">
+                            Наушники Beats Solo3 могут работать до 40 часов без подзарядки, чтобы вы могли пользоваться ими каждый день. 5 минутной зарядки Fast Fuel хватит ещё на 3 часа воспроизведения. Фирменное звучание Beats в наушниках с технологией Bluetooth класса 1 будет сопровождать вас повсюду — куда бы вы ни отправились. 
+                            Расположение чашек с мягкими амбушюрами можно регулировать — вы сможете носить их целый день.
+                        </div>
+                    </li>
+                    <li class="catalog__menu-item">
+                        <a href="" class="catalog__menu__title">
+                            <div class="catalog__menu-text">«Чёрный матовый»</div>
+                        </a>
+                        <div class="catalog__menu-content">
+                            Наушники Beats Solo3 могут работать до 40 часов без подзарядки, чтобы вы могли пользоваться ими каждый день. 5 минутной зарядки Fast Fuel хватит ещё на 3 часа воспроизведения. Фирменное звучание Beats в наушниках с технологией Bluetooth класса 1 будет сопровождать вас повсюду — куда бы вы ни отправились. 
+                            Расположение чашек с мягкими амбушюрами можно регулировать — вы сможете носить их целый день.
+                        </div>
+                    </li>
+                    <li class="catalog__menu-item">
+                        <a href="" class="catalog__menu__title">
+                            <div class="catalog__menu-text">«Красный цитрус»</div>
+                        </a>
+                        <div class="catalog__menu-content">
+                            Наушники Beats Solo3 могут работать до 40 часов без подзарядки, чтобы вы могли пользоваться ими каждый день. 5 минутной зарядки Fast Fuel хватит ещё на 3 часа воспроизведения. Фирменное звучание Beats в наушниках с технологией Bluetooth класса 1 будет сопровождать вас повсюду — куда бы вы ни отправились. 
+                            Расположение чашек с мягкими амбушюрами можно регулировать — вы сможете носить их целый день.
+                        </div>
+                    </li>
+                </ul>
             </section>
             <section class="section reviews">
                 <div class="container">
@@ -597,6 +628,27 @@
                     </div>
                 </div>
             </section>
+            <section class="section">
+                <div class="container">
+                    <h2 class="section__title">Как мы работаем</h2>
+                    <div class="section__player-container">
+                        <div class="player player__active">
+                            <div class="player__wrapper">
+                                <div class="yt__player" id="yt__player"></div>
+                                <div class="player__splash"></div>
+                            </div>
+                            <div class="player__controls">
+                                <button class="player__start"></button>
+                                <div class="player__playback">
+                                    <button class="player__playback-button"></button>
+                                </div>
+                                <!--<span class="player__duration-completed">0:00</span>
+                                <span class="player__duration-estimate">0:00</span>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section class="section order-section">
                 <div class="container">
                     <h2 class="section__title order-section__title">Закажите доставку</h2>
@@ -673,8 +725,9 @@
                 </div>
             </section>
             <section class="section map">
-                <div class="map__box">
-                    <img src="./img/map.png" alt="" class="map__img">
+                <div class="map">
+                    <div class="map__box" id="map__box"></div>
+                    <!--<img src="./img/map.png" alt="" class="map__img">-->
                 </div>
                 <footer class="footer-container">
                     <div class="container">
@@ -773,11 +826,20 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+    <script src="./js/map.js"></script>
     <script src="./js/hamburger.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/acco.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/tabs.js"></script>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="./js/player.js"></script>
+
+    <script src="./js/catalog.js"></script>
+
+    <script src="./js/ops.js"></script>
 
 
 </body>
