@@ -15,7 +15,7 @@ const init = () => {
 
     const myCollection = new ymaps.GeoObjectCollection({}, {
         draggable: false,
-        iconLayout: 'defailt#image',
+        iconLayout: 'default#image',
         iconImageHref: "./img/marker.png",
         iconImageSize: [43, 55],
         iconImageOffset: [-35, -52]
@@ -26,6 +26,8 @@ const init = () => {
     });
 
     myMap.geoObjects.add(myCollection);
+
+    //myMap.behaviors.disable('scrollZoom');
 }
 
 ymaps.ready(init);
