@@ -1,0 +1,68 @@
+.benefits__main-title{
+    margin-bottom: rem(18px);
+}
+
+.benefits__conteiner {
+    @include tablets {
+        width: 99%;
+    }
+    @include phones {
+        width: 95%;
+    }
+}
+
+.benefits__list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    @include phones {
+        flex-direction: column;
+    }
+}
+
+.benefits__item {
+    flex: 1;
+    padding: 0 3%;
+    text-align: center;
+    position: relative;
+
+    @include tablets {
+        padding: 0;
+    }
+
+    @include phones {
+        margin-bottom: rem(25px);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.benefits__item::before {
+    content: url(../img/shape.png);
+    position: absolute;
+    top: rem(60px);
+    right: 0;
+    transform: translateX(50%);
+    display: block;
+    width: rem(70px);
+    height: rem(24px);
+
+    @include tablets {
+        display: none;
+    }
+}
+
+.benefits__item:first-child {
+    padding-left: 0;
+}
+
+.benefits__item:last-child {
+    padding-right: 0;
+}
+
+.benefits__item:last-child::before {
+    display: none;
+}

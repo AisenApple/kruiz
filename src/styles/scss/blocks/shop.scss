@@ -1,0 +1,64 @@
+.bx-wrapper {
+    margin-bottom: 0;
+    box-shadow: none;
+    border: none;
+    background: none;
+}
+
+.bx-controls {
+    display: none;
+}
+
+.shop {
+    background: #f8faf9;
+}
+
+.shop__wrapper {
+    position: relative;
+}
+
+.shop__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: rem(24px);
+    height: rem(40px);
+
+    @include tablets {
+        transform: none;
+        top: rem(150px);
+    }
+
+    @include phones {
+        width: rem(13.5px);
+        height: rem(27px);
+    }
+
+    &--prev {
+        left: rem(-24px);
+
+        @include tablets {
+            left: 18%;
+        }
+
+        @include phones {
+            left: 0;
+        }
+    }
+    &--next {
+        right: -24px;
+
+        @include tablets {
+            right: 18%;
+        }
+
+        @include phones {
+            right: 0;
+        }
+    }
+}
+
+.shop__arrow-svg {
+    width: 100%;
+    height: 100%;
+}

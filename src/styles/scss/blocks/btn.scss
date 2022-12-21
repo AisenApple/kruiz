@@ -1,0 +1,43 @@
+.btn {
+    font-size: rem(16px);
+    font-weight: bold;
+    padding: rem(21px) rem(41px);
+    text-transform: uppercase;
+    border-radius: rem(100px);
+    line-height: 1;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+
+    &--hero {
+        @include phones {
+            font-size: rem(19px);
+            line-height: rem(18px);
+        }
+    }
+}
+
+.btn--theme--red {
+    background: #E01F3D;
+    color: #fff;
+}
+
+.btn--theme--red:hover {
+    background: #CA1B36;
+    color: #fff;
+}
+
+.btn--theme--transparent {
+    text-transform: capitalize;
+    background: transparent;
+    font-weight: 400;
+    font-size: rem(16px);
+    line-height: rem(19px);
+    color: white;
+    border: none;
+    padding: 0 rem(21px) 0;
+}
+
+.btn--theme--transparent:hover {
+    color: red;
+}

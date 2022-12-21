@@ -1,0 +1,43 @@
+.contacts {
+    font-family: "Play", Arial, Helvetica, sans-serif;
+    font-size: rem(18px);
+    margin-bottom: rem(3px);
+
+    @include tablets {
+        margin-bottom: rem(30px);
+    }
+
+    @include phones {
+        margin-bottom: rem(20px);
+    }
+}
+
+.contacts__desc {
+    line-height: rem(24px);
+
+    @include tablets {
+        font-size: rem(18px);
+        line-height: rem(24px);
+    }
+
+    @include phones {
+        margin-bottom: rem(12px);
+        font-size: rem(18px);
+    }
+}
+
+.phone-number__text {
+    line-height: rem(21px);
+
+    @include tablets {
+        font-size: rem(21px);
+        line-height: rem(24px);
+        color: red;
+    }
+
+    @include phones {
+        font-size: rem(16px);
+        line-height: rem(21px);
+        color: #292929;
+    }
+}

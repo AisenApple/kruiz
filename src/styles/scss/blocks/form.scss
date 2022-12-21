@@ -1,0 +1,149 @@
+.order-section {
+    background: rgba(15, 14, 14, 0.89);
+    color: #fff
+}
+
+.order-section__title {
+    color: inherit;
+    margin-bottom: rem(58px);
+
+    @include tablets {
+        margin-bottom: rem(30px);
+    }
+
+    @include phones {
+        margin-bottom: rem(40px);
+    }
+}
+
+.form {
+    display: flex;
+
+    @include tablets {
+        flex-direction: column;
+        padding: 0 18%;
+    }
+
+    @include phones {
+        padding: 0;
+    }
+}
+
+.form__title {
+    font-size: rem(16px);
+    line-height: rem(19px);
+    margin-bottom: rem(6px);
+    color: white;
+}
+
+.form__col {
+    flex: 1;
+    margin-right: rem(15px);
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    @include tablets {
+        margin-right: rem(0px);
+    }
+}
+
+.form__row {
+    display: flex;
+    column-gap: rem(17px);
+    margin-bottom: rem(11px);
+
+    @include tablets {
+        margin-bottom: rem(14px);
+    }
+
+    @include phones {
+        margin-bottom: rem(13px);
+    }
+
+    &--textarea {
+        margin-bottom: rem(18px);
+
+        @include tablets {
+            margin-bottom: rem(20px);
+        }
+
+        @include phones {
+            margin-bottom: rem(24px);
+        }
+    }
+}
+
+.form__controls {
+    margin-bottom: rem(20px);
+
+    @include phones {
+        justify-content: center;
+    }
+}
+
+.form__block {
+    flex: 1;
+}
+
+.form__col-ml {
+    margin-left: rem(27px);
+
+    @include tablets {
+        margin-left: rem(0px);
+    }
+}
+
+.form__input {
+    width: 100%;
+    border: rem(3px) solid transparent;
+    border-radius: rem(4px);
+    padding: rem(18px) rem(12px);
+
+    &:focus {
+        outline: 0;
+        border: 3px solid #E01F3D;
+    }
+
+    @include tablets {
+        padding: rem(8px) rem(10px);
+    }
+
+    &--textarea {
+        display: block;
+        height: rem(152px);
+        resize: none;
+
+        @include tablets {
+            height: rem(82px);
+        }
+    }
+}
+
+//.form__input-textarea {
+    //width: 100%;
+    //border: rem(3px) solid transparent;
+    //border-radius: rem(4px);
+    //margin-bottom: rem(10px);
+    //padding: rem(58px);
+//}
+
+.form__btns {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: rem(46px);
+    margin-bottom: 0;
+
+    @include tablets {
+        justify-content: center;
+    }
+
+    @include phones {
+        margin-top: rem(39px);
+    }
+}
+
+.form__input.input-error {
+    border-color: palegreen;
+}

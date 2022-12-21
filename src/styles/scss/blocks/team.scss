@@ -1,0 +1,153 @@
+.team {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @include phones {
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+.team__item {
+    text-align: center;
+    flex: 1;
+    position: relative;
+    margin-right: rem(20px);
+
+    &.active {
+        .team__title::after {
+            transform: rotate(180deg);
+        }
+    }
+
+    @include tablets {
+        margin-right: 0;
+    }
+}
+
+.team__item:first-child {
+    padding-left: 0;
+}
+
+.team__item:last-child {
+    padding-right: 0;
+}
+
+.team__member {
+    width: rem(220px);
+    height: rem(290px);
+    margin-bottom: rem(25px);
+
+    @include tablets {
+        margin: 0 auto;
+        margin-bottom: rem(21px);
+    }
+
+    @include phones {
+        width: rem(138px);
+        height: rem(180px);
+    }
+}
+
+.team__content-block {
+    
+    @include tablets {
+        max-width: rem(260px);
+        margin: 0 auto;
+    }
+}
+
+.team__title {
+    color: #292929;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: rem(18px);
+    line-height: rem(21px);
+    margin: 0 auto rem(11px);
+    background: transparent;
+
+    &::after {
+        content: '';
+        background: url(../img/polygon.jpg) center center / contain no-repeat;
+        width: rem(9px);
+        height: rem(9px);
+        margin-left: rem(4px);
+        transition: transform .3s;
+    }
+
+    @include tablets {
+        font-size: rem(21px);
+        line-height: rem(25px);
+        margin-bottom: rem(16px);
+        margin: 0 auto rem(16px);
+    }
+}
+
+.team__content {
+    overflow: hidden;
+    height: 0;
+    transition: .3s;
+
+    @include tablets {
+        margin-bottom: rem(13px);
+    }
+}
+
+.team__content-block-work {
+    font-weight: 400;
+    font-size: rem(16px);
+    line-height: rem(18.5px);
+    color: #000;
+    margin-bottom: rem(4px);
+
+    @include tablets {
+        font-weight: 700;
+        font-size: rem(18px);
+        line-height: rem(21px);
+        margin-bottom: rem(10px);
+    }
+}
+
+.team__content-block-desc {
+    font-weight: 400;
+    font-size: rem(16px);
+    line-height: rem(18.5px);
+    color: #666;
+
+    @include tablets {
+
+    }
+}
+
+.team--version--desctop {
+    @include tablets {
+        display: none;
+    }
+
+    @include phones {
+        display: none;
+    }
+}
+
+.team--version--desctop .team__content {
+    position: absolute;
+    top: 100%;
+}
+
+.team--version--mobile {
+    display: none;
+
+    @include tablets {
+        display: block;
+    }
+}

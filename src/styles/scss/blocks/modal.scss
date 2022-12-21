@@ -1,0 +1,28 @@
+.modal {
+    display: none;
+    color: #000;
+}
+
+.modal__container {
+    text-align: center;
+}
+
+.modal__content {
+    margin-bottom: rem(18px);
+
+    @include phones {
+        font-weight: 700;
+        font-size: rem(18px);
+        line-height: rem(24px);
+        text-align: center;
+    }
+}
+
+.modal__button-container {
+    align-items: center;
+}
+
+.error-modal {
+    border: 1px solid red;
+    color: red;
+}

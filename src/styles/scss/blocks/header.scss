@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: rem(23px);
+    align-items: center;
+
+    @include phones {
+        
+    }
+}
+
+.header__phone-number {
+    @include tablets {
+        display: none;
+    }
+}

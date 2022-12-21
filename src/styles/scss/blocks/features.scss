@@ -1,0 +1,17 @@
+.features {
+    display: flex;
+}
+
+.features__item {
+    margin-right: rem(18px);
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.features__text {
+    font-size: rem(16px);
+    line-height: rem(18px);
+    width: rem(114px);
+}
