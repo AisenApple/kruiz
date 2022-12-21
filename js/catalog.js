@@ -15,11 +15,11 @@ $(() => {
         const isMobile = window.matchMedia("(max-width: 480px)").matches;
 
         if(isTablets) {
-            reqItemWidth = screenWidth = titlesWidth;
+            reqItemWidth = screenWidth - titlesWidth;
         }
 
         if (isMobile) {
-            reqItemWidth = screenWidth - titlesWidth.width();
+            reqItemWidth = screenWidth - titlesBlocks.width();
         }  
         if (!isTablets && !isMobile){
             reqItemWidth = 500;
@@ -39,7 +39,7 @@ $(() => {
         //item.removeClass("active");
         //hiddenContent.width(reqWidth.container);
 
-        const elems = container.find(".colors__menu-item");
+        const elems = container.find(".catalog__menu-item");
         const contentBlock = container.find(".catalog__menu-content");
 
         elems.removeClass("active");

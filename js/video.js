@@ -24,7 +24,7 @@ window.addEventListener('load', () => {
     soundControl.min = 0;
     soundControl.max = 10;
     soundControl.value = soundControl.max;
-    durationControl.addEventListener('input', changeSoundVolume);
+    soundControl.addEventListener('input', changeSoundVolume);
 
     dynamicBtn.addEventListener('click', soundOff);
 
